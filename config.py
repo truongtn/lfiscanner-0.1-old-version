@@ -1,5 +1,5 @@
 DIR="C:\\"
-COOKIE="security=low; PHPSESSID=mdm4a8v2mmfhd3trc0ojiduv86"
+COOKIE="security=low; PHPSESSID=opbqhavce8gsrpt3tkhige2r30"
 METHOD="GET"
 DONG=[]
 THAMSOS=[]
@@ -10,4 +10,6 @@ HEADERS={"User-Agent": "truongpro",
          "Connection": "keep-alive"}
 DONG2=[]
 FILENAME=""
+PATH=[]
+HOSTNAME=""
 
