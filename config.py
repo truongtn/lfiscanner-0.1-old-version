@@ -1,5 +1,5 @@
 DIR="C:\\"
-COOKIE="security=low; PHPSESSID=opbqhavce8gsrpt3tkhige2r30"
+COOKIE="security=low; PHPSESSID=6u8vcocif8cjvad1her90884q4"
 METHOD="GET"
 DONG=[]
 THAMSOS=[]

@@ -4,6 +4,7 @@ import os
 from config import *
 from urlparse import urlparse
 from importthumuc import *
+from xacdinhfilename import *
 def taothumuc(url):
     o = urlparse(url)
     importthumuc(o.path)
@@ -11,24 +12,11 @@ def taothumuc(url):
     command ="mkdir "+DIR+"lfiscanner"
     
     os.system(command)
-    print "[INFO]:lfiscanner root folder created"
-    command+="\\"+HOSTNAME
+    print "[INFO]:lfiscanner root folder is created"
+    command+="\\"+o.hostname
     os.system(command)
-    print "[INFO]:domain root folder created"
-    #for i in range(0,len(DONG2)):
-        #command+="\\"+DONG2[i]
-        #os.system(command)
-        #print command
-        
-    FILENAME = command + "\\"
-    
-    vitri = url.find("=")
-    if url.find("=",vitri+1)!=-1:
-        vitri = url.find("=",vitri+1)
-    for i in range(vitri+1,len(url)):
-        FILENAME = FILENAME + url[i]
-    FILENAME = FILENAME[6:]
-    return FILENAME
+    print "[INFO]:domain root folder is created"
+   
     
     
         
