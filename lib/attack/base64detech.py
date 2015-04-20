@@ -14,3 +14,4 @@ def base64detech(noidung):
         if isbase64(DONG[i])!="khong":
 
             return base64.decodestring(DONG[i])
+    return "khong"
