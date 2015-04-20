@@ -8,7 +8,12 @@ from urlparse import urlparse
 import os
 from taothumuc import *
 from xacdinhfilename import *
+sys.path.append('../thirdparty/')
+
+import fixpath
+from colorama import init, Fore, Back, Style
 def exportfile(url):
+    init()
     o = urlparse(url)
     taothumuc(url)
     data = httptruong(url)
@@ -18,9 +23,10 @@ def exportfile(url):
     try:
         f = open(b,"w")
         f.write(a)
+        print (Fore.GREEN+'[SUCCESS]: '+b+' has been exported successfully')
         f.close()
         
     except (RuntimeError, TypeError, NameError,IOError):
-        print "[WARNING]: "+b +" is error, can not export"
+        print(Fore.RED+'[WARNING]: "' +b +'" is error, can not be exported\n')
         pass
-exportfile("http://localhost/dvwa/vulnerabilities/fi/?page=php://filter/convert.base64-encode/resource=../../setup.php")
+

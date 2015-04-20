@@ -5,4 +5,3 @@ def xacdinhfilename(url):
     else:
         vitri = url.rfind("=")+1
         return url[vitri:]
-print xacdinhfilename("http://abc.com/?page=abc.php")
