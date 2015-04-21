@@ -33,8 +33,27 @@ def main(argv):
       elif opt == '-u':
         attackController(arg)
       
-   
-banner="\n\n\n\n\n\n\n\n\n                            LFISCANNER\nAuthor: truongtn \na.k.a truongpro\nHome:http://truongtn.wordpress.com\n\n\n\n\n"
+banner="""
+
+
+
+
+
+
+  W  W       wW  Ww oo_      c  c       \\\  ///\\\  ///      ))     
+ (O)(O)   wWw(O)(O)/  _)-<   (OO)   /)  ((O)(O))((O)(O)) wWw (Oo)-.  
+   ||     (O)_(..) \__ `.  ,'.--.)(o)(O) | \ ||  | \ ||  (O)_ | (_)) 
+   | \   .' __)||     `. |/ //_|_\ //\\  ||\\||  ||\\|| .' __)|  .'  
+   |  `.(  _) _||_    _| || \___  |(__)| || \ |  || \ |(  _)  )|\\   
+  (.-.__))/  (_/\_),-'   |'.    ) /,-. | ||  ||  ||  || `.__)(/  \)  
+   `-'  (         (_..--'   `-.' -'   ''(_/  \_)(_/  \_)      )      
+
+
+                                                                      
+
+
+"""
+banner+="LFISCANNER\nAuthor: truongtn \na.k.a truongpro\nHome:http://truongtn.wordpress.com\n\n\n\n\n"
 
 
                                                              

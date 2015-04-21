@@ -18,6 +18,7 @@ sys.path.append('../lib/scan/')
 from scan import *
 def attackController(url):
     if scan(url)!="base64scan":
+        print "[INFO]: It doesn't appear to be vulnerable"
         return 0
     print '[INFO]: Preparing automatic exploit to target '+url+"\n"
     goc =  makelinkattack(url)
