@@ -6,7 +6,7 @@ sys.path.append('../lib/attack/')
 from exportfile import *
 sys.path.append('../lib/crawler/')
 from  gethref import *
-from  getdata import *
+
 from phpaccept import *
 from urlparse import urlparse
 sys.path.append('../lib/attack/')
@@ -28,21 +28,20 @@ def attackController(url):
     print '[INFO]: Determining the query URL is "'+linkquery+'"\n'
     HOSTNAME = o.hostname
     
-    gethref(getdata(url))
+    gethref(httptruong(url))
     print '[INFO]: Get php files as much as possible, FOUND: '
     print PATH
     print "\n"
-    for path in PATH:
+    for i in range(0,len(PATH)):
         
-        full = linkquery +path
-        #print full
+        full = linkquery +PATH[i]
+        
         
         full = makelinkattack(full)
-        #print full
-        #print url
+        print full+"\n"
         exportfile(full)
       
-#attackController("http://localhost/dvwa/vulnerabilities/fi/?page=include.php")
+
         
  
     

@@ -5,7 +5,6 @@ sys.path.append('lib/attack/')
 from exportfile import *
 sys.path.append('lib/crawler/')
 from  gethref import *
-from  getdata import *
 from phpaccept import *
 from urlparse import urlparse
 sys.path.append('lib/attack/')
@@ -53,7 +52,7 @@ banner="""
 
 
 """
-banner+="LFISCANNER\nAuthor: truongtn \na.k.a truongpro\nHome:http://truongtn.wordpress.com\n\n\n\n\n"
+banner+="LFISCANNER\nAuthor: truongtn \nHome:http://truongtn.wordpress.com\n\n\n\n\n"
 
 
                                                              

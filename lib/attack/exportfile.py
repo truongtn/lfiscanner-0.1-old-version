@@ -12,14 +12,16 @@ sys.path.append('../thirdparty/')
 
 import fixpath
 from colorama import init, Fore, Back, Style
-def exportfile(url):
+def exportfile(url2):
     init()
-    o = urlparse(url)
-    taothumuc(url)
-    data = httptruong(url)
-    a =  base64detechanddecode(data)
+    o = urlparse(url2)
+    taothumuc(url2)
+    data = httptruong(url2)
     
-    b = DIR+"lfiscanner\\"+o.hostname+"\\"+xacdinhfilename(url)
+    a =  base64detechanddecode(data)
+
+    print xacdinhfilename(url2)
+    b = DIR+"lfiscanner\\"+o.hostname+"\\"+xacdinhfilename(url2)
     try:
         f = open(b,"w")
         f.write(a)
