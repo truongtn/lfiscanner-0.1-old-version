@@ -1,4 +1,4 @@
-DIR="C:\\"
+DIR="/home/truongtn/"
 COOKIE="security=low; PHPSESSID=livikpgmbmrjl9rjcn26cq7rh6"
 METHOD="GET"
 
